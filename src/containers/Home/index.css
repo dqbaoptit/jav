@@ -1,0 +1,19 @@
+.main {
+    display: inline-block;
+    padding: 20px;
+}
+
+.body {
+    display: flex;
+    justify-items: normal;
+    align-items: center;
+}
+
+.loading-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+    background-color: floralwhite;
+}
