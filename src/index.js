@@ -13,7 +13,7 @@ const customHistory = createBrowserHistory();
 ReactDOM.render(
   <Router history={customHistory}>
     <Switch>
-      <Route exact path='/' component={App} />
+      <Route exact path='/jav' component={App} />
       <Route path='/actress/:id'>
         <Details  />
       </Route>
