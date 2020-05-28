@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import {Link} from 'react-router-dom';
+import {LazyLoadImage} from 'react-lazy-load-image-component';
 import {Card, Drawer} from 'antd';
 import './index.css'
 
@@ -19,7 +20,10 @@ export default (props)=>{
             <Card 
             hoverable
             style={{width : 250, margin:20}}
-            cover ={<img alt={props.id} src ={props.src}  />}
+            cover =
+            {
+                <LazyLoadImage alt={props.id} src ={props.src}  />
+            }
             >
                 <Meta title={props.name} description={props.japanName} />
             </Card>
@@ -46,6 +50,5 @@ export default (props)=>{
         </Drawer>
         </div>
       </div>
-
     )
 };

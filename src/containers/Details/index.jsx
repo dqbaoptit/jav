@@ -29,7 +29,7 @@ export default ()=>{
             }
         }
         Fetch();
-    },[])
+    },[url])
         return (
         <div>
             <Nav />

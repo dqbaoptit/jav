@@ -13,7 +13,6 @@ export default () => {
     const [data, setData] = useState([])
     const [url, setUrl] = useState(API+name);
 
-
     useEffect(()=>{
         setUrl(API+name);
     },[name]);
